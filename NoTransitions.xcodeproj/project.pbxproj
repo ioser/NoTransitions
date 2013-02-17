@@ -19,6 +19,8 @@
 		9A8FBB6516D19E10009F4D46 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8FBB6316D19E10009F4D46 /* MainStoryboard.storyboard */; };
 		9A8FBB6816D19E10009F4D46 /* REMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FBB6716D19E10009F4D46 /* REMMasterViewController.m */; };
 		9A8FBB6B16D19E10009F4D46 /* REMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FBB6A16D19E10009F4D46 /* REMDetailViewController.m */; };
+		9A8FBB7516D19E23009F4D46 /* REMNavDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FBB7216D19E23009F4D46 /* REMNavDetailViewController.m */; };
+		9A8FBB7616D19E23009F4D46 /* REMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8FBB7416D19E23009F4D46 /* REMNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		9A8FBB6716D19E10009F4D46 /* REMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REMMasterViewController.m; sourceTree = "<group>"; };
 		9A8FBB6916D19E10009F4D46 /* REMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REMDetailViewController.h; sourceTree = "<group>"; };
 		9A8FBB6A16D19E10009F4D46 /* REMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REMDetailViewController.m; sourceTree = "<group>"; };
+		9A8FBB7116D19E23009F4D46 /* REMNavDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMNavDetailViewController.h; sourceTree = "<group>"; };
+		9A8FBB7216D19E23009F4D46 /* REMNavDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMNavDetailViewController.m; sourceTree = "<group>"; };
+		9A8FBB7316D19E23009F4D46 /* REMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMNavViewController.h; sourceTree = "<group>"; };
+		9A8FBB7416D19E23009F4D46 /* REMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,10 @@
 				9A8FBB6716D19E10009F4D46 /* REMMasterViewController.m */,
 				9A8FBB6916D19E10009F4D46 /* REMDetailViewController.h */,
 				9A8FBB6A16D19E10009F4D46 /* REMDetailViewController.m */,
+				9A8FBB7116D19E23009F4D46 /* REMNavDetailViewController.h */,
+				9A8FBB7216D19E23009F4D46 /* REMNavDetailViewController.m */,
+				9A8FBB7316D19E23009F4D46 /* REMNavViewController.h */,
+				9A8FBB7416D19E23009F4D46 /* REMNavViewController.m */,
 				9A8FBB5216D19E10009F4D46 /* Supporting Files */,
 			);
 			path = NoTransitions;
@@ -183,6 +193,8 @@
 				9A8FBB5C16D19E10009F4D46 /* REMAppDelegate.m in Sources */,
 				9A8FBB6816D19E10009F4D46 /* REMMasterViewController.m in Sources */,
 				9A8FBB6B16D19E10009F4D46 /* REMDetailViewController.m in Sources */,
+				9A8FBB7516D19E23009F4D46 /* REMNavDetailViewController.m in Sources */,
+				9A8FBB7616D19E23009F4D46 /* REMNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
