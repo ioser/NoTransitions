@@ -10,6 +10,8 @@
 
 @interface REMNavDetailViewController : UIViewController
 
-@property (strong, nonatomic) NSString *displayLetter;
+@property (strong, nonatomic) NSString *displayLetterProperty;
+
+- (void)displayTheLetter:(NSString *) letterToDisplay;
 
 @end

@@ -67,6 +67,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sampleDPressed:" destination="IHz-uT-EN9" eventType="touchUpInside" id="q5p-Br-Rk5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-Co-MvK">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -77,6 +80,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sampleEPressed:" destination="IHz-uT-EN9" eventType="touchUpInside" id="JDI-wO-nYa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ0-Ij-ufp">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -87,6 +93,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sampleFPressed:" destination="IHz-uT-EN9" eventType="touchUpInside" id="Is5-Gc-Oi4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -162,6 +171,11 @@
         </class>
         <class className="REMNavViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/REMNavViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sampleDPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="sampleEPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="sampleFPressed:" candidateClass="UIButton"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

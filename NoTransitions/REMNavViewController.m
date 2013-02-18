@@ -10,11 +10,14 @@
 #import "REMNavDetailViewController.h"
 
 @interface REMNavViewController ()
-
+@property (strong, nonatomic) REMNavDetailViewController *detailVC;
 @end
 
 @implementation REMNavViewController
 
+//
+// Overrides of base class methods
+//
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,6 +43,35 @@
 {
     REMNavDetailViewController *navDetailVC = segue.destinationViewController;
     NSString *segueName = [segue identifier];
-    navDetailVC.displayLetter = [segueName substringFromIndex:[segueName length] - 1];
+    navDetailVC.displayLetterProperty = [segueName substringFromIndex:[segueName length] - 1];
 }
+
+//
+// Property setters and getters
+//
+
+- (REMNavDetailViewController *) detailVC {
+	if (_detailVC == nil) {
+		_detailVC = (REMNavDetailViewController *) [[self.splitViewController.viewControllers lastObject] topViewController];
+	}
+	return _detailVC;
+}
+
+//
+// Button pressed methods
+//
+- (IBAction)sampleDPressed:(UIButton *)sender {
+	[self.detailVC displayTheLetter:@"D"];
+	self.detailVC.displayLetterProperty = @"d";
+}
+
+- (IBAction)sampleEPressed:(UIButton *)sender {
+	[self.detailVC displayTheLetter:@"E"];
+}
+
+- (IBAction)sampleFPressed:(UIButton *)sender {
+	[self.detailVC displayTheLetter:@"F"];
+}
+
+
 @end
