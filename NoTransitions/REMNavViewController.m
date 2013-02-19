@@ -62,7 +62,7 @@
 //
 - (IBAction)sampleDPressed:(UIButton *)sender {
 	[self.detailVC displayTheLetter:@"D"];
-	self.detailVC.displayLetterProperty = @"d";
+//	self.detailVC.displayLetterProperty = @"d";
 }
 
 - (IBAction)sampleEPressed:(UIButton *)sender {

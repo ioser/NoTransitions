@@ -8,8 +8,11 @@
 
 #import "REMNavDetailViewController.h"
 
-@interface REMNavDetailViewController ()
+@interface REMNavDetailViewController ()<UISplitViewControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *displayLetterLabel;
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+
 @end
 
 @implementation REMNavDetailViewController
@@ -57,4 +60,22 @@
 	self.displayLetterLabel.text = letterToDisplay;
 }
 
+//
+// UISplitViewControllerDelegate delegate methods
+//
+- (void)splitViewController:(UISplitViewController *)svc
+	 willHideViewController:(UIViewController *)aViewController
+		  withBarButtonItem:(UIBarButtonItem *)barButtonItem
+	   forPopoverController:(UIPopoverController *)pc {
+	barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+	[self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+	self.masterPopoverController = pc;
+}
+
+- (void)splitViewController:(UISplitViewController *)svc
+	 willShowViewController:(UIViewController *)aViewController
+  invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+	[self.navigationItem setLeftBarButtonItem:nil animated:YES];
+	self.masterPopoverController = nil;
+}
 @end
